@@ -19,9 +19,11 @@ class GraphingCalculator:
         self.y_min = tk.DoubleVar(value=-10)
         self.y_max = tk.DoubleVar(value=10)
         
-        self.setup_ui()
+        # Initialize before setup_ui
         self.fig = None
         self.canvas = None
+        
+        self.setup_ui()
         
     def setup_ui(self):
         # Main frame
