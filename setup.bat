@@ -12,25 +12,32 @@ REM Check if Python is installed
 python --version >nul 2>&1
 if errorlevel 1 (
     echo Error: Python is not installed or not in PATH
-    echo Please install Python from https://www.python.org/downloads/
-    echo Make sure to check "Add Python to PATH" during installation
+    echo.
+    echo SOLUTION:
+    echo 1. Install Python from https://www.python.org/downloads/
+    echo 2. During installation, CHECK "Add Python to PATH"
+    echo 3. Restart your computer
+    echo 4. Run this script again
+    echo.
     pause
     exit /b 1
 )
 
 echo [1/3] Installing required packages...
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 if errorlevel 1 (
     echo Error: Failed to install packages
+    echo Try running: python -m pip install --upgrade pip
     pause
     exit /b 1
 )
 
 echo.
 echo [2/3] Installing PyInstaller...
-pip install pyinstaller
+python -m pip install pyinstaller
 if errorlevel 1 (
     echo Error: Failed to install PyInstaller
+    echo Try running: python -m pip install --upgrade pip
     pause
     exit /b 1
 )
