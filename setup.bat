@@ -47,7 +47,7 @@ if errorlevel 1 (
 
 echo.
 echo [3/3] Creating Windows executable...
-pyinstaller --onefile --windowed --name "GraphingCalculator" test.py
+python -m PyInstaller --onefile --windowed --name "GraphingCalculator" test.py
 if errorlevel 1 (
     echo Error: Failed to create executable
     pause
