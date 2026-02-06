@@ -2,6 +2,9 @@
 REM Graphing Calculator Setup Script
 REM This script installs dependencies and creates a Windows executable
 
+REM Change to script directory
+cd /d "%~dp0"
+
 echo.
 echo ========================================
 echo   Graphing Calculator Setup
