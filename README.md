@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Graphing Calculator
 
 A feature-rich graphing calculator application built with Python and tkinter.
@@ -77,3 +76,4 @@ Use the "Quick Calculator" to evaluate single expressions:
 =======
 coming soon
 >>>>>>> e3f20a72f1f13b775c0958f053d8ed5ccc6ed465
+
