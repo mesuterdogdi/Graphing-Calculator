@@ -33,15 +33,14 @@ class GraphingCalculator:
         control_frame.pack(side=tk.LEFT, fill=tk.BOTH, padx=(0, 10))
         
         # Title
-        title_label = ttk.Label(control_frame, text="Graphing Calculator", 
-                               font=("Arial", 14, "bold"))
+        title_label = tk.Label(control_frame, text="Graphing Calculator", 
+                               font=("Arial", 14, "bold"), bg="white")
         title_label.pack(pady=10)
         
         # Expression input
         ttk.Label(control_frame, text="Enter function f(x):").pack(anchor=tk.W)
         ttk.Entry(control_frame, textvariable=self.expression, width=25).pack(fill=tk.X, pady=5)
-        ttk.Label(control_frame, text="Examples: x**2, sin(x), sqrt(x), 1/x").pack(anchor=tk.W, 
-                                                                                     font=("Arial", 8))
+        tk.Label(control_frame, text="Examples: x**2, sin(x), sqrt(x), 1/x", font=("Arial", 8), bg="white").pack(anchor=tk.W)
         
         # X-axis range
         ttk.Label(control_frame, text="X-axis range:").pack(anchor=tk.W, pady=(15, 5))
@@ -67,8 +66,8 @@ class GraphingCalculator:
         
         # Calculator section
         ttk.Label(control_frame, text="Quick Calculator", 
-                 font=("Arial", 12, "bold")).pack(pady=(20, 10))
-        
+         k.Label(control_frame, text="Quick Calculator", 
+                 font=("Arial", 12, "bold"), bg="white"
         calc_frame = ttk.Frame(control_frame)
         calc_frame.pack(fill=tk.X)
         
@@ -89,8 +88,8 @@ class GraphingCalculator:
 • abs, ceil, floor
 • Operators: +, -, *, /, **"""
         
-        ttk.Label(control_frame, text=info_text, font=("Arial", 8), 
-                 justify=tk.LEFT).pack(anchor=tk.W, pady=(20, 0))
+        tk.Label(control_frame, text=info_text, font=("Arial", 8), 
+                 justify=tk.LEFT, bg="white").pack(anchor=tk.W, pady=(20, 0))
         
         # Graph panel (right side)
         graph_frame = ttk.Frame(main_frame)
