@@ -65,9 +65,9 @@ class GraphingCalculator:
         ttk.Button(control_frame, text="Clear", command=self.clear_graph).pack(fill=tk.X, pady=5)
         
         # Calculator section
-        ttk.Label(control_frame, text="Quick Calculator", 
-         k.Label(control_frame, text="Quick Calculator", 
-                 font=("Arial", 12, "bold"), bg="white"
+        tk.Label(control_frame, text="Quick Calculator", 
+                 font=("Arial", 12, "bold"), bg="white").pack(pady=(20, 10))
+        
         calc_frame = ttk.Frame(control_frame)
         calc_frame.pack(fill=tk.X)
         
