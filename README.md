@@ -4,7 +4,6 @@ A simple graphing calculator application built with Python and tkinter. It
 plots functions of `x`, provides a small calculator, and can be packaged as a
 Windows executable.
 
-<<<<<<< HEAD
 ## Features
 
 - Plot mathematical expressions f(x) with configurable axis ranges
@@ -109,4 +108,5 @@ coming soon
 >>>>>>> e3f20a72f1f13b775c0958f053d8ed5ccc6ed465
 
 >>>>>>> 262a5b306370ba96e2f868bfa6932056068e6725
+
 
