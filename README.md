@@ -105,8 +105,6 @@ open an issue or PR.
 - matplotlib
 =======
 coming soon
->>>>>>> e3f20a72f1f13b775c0958f053d8ed5ccc6ed465
 
->>>>>>> 262a5b306370ba96e2f868bfa6932056068e6725
 
 
